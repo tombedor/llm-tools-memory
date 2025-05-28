@@ -18,7 +18,7 @@ llm install llm-tools-memory
 To use this with the [LLM command-line tool](https://llm.datasette.io/en/stable/usage.html):
 
 ```bash
-llm --tool create_memory "Example prompt goes here" --tools-debug
+llm --tool Memory "Create memory: my name is Ted" --tools-debug
 ```
 
 With the [LLM Python API](https://llm.datasette.io/en/stable/python-api.html):
