@@ -1,0 +1,28 @@
+[project]
+name = "llm-tools-memory"
+version = "0.1"
+description = "Memory tools for LLM"
+readme = "README.md"
+authors = [{name = "Tom Bedor"}]
+license = "Apache-2.0"
+classifiers = []
+requires-python = ">=3.9"
+dependencies = [
+    "llm>=0.26"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/tombedor/llm-tools-memory"
+Changelog = "https://github.com/tombedor/llm-tools-memory/releases"
+Issues = "https://github.com/tombedor/llm-tools-memory/issues"
+CI = "https://github.com/tombedor/llm-tools-memory/actions"
+
+[project.entry-points.llm]
+llm_tools_memory = "llm_tools_memory"
+
+[project.optional-dependencies]
+test = ["pytest", "llm-echo>=0.3a1"]
