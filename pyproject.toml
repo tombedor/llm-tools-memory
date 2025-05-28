@@ -1,6 +1,6 @@
 [project]
 name = "llm-tools-memory"
-version = "0.1"
+version = "0.0.2"
 description = "Memory tools for LLM"
 readme = "README.md"
 authors = [{name = "Tom Bedor"}]
@@ -8,12 +8,18 @@ license = "Apache-2.0"
 classifiers = []
 requires-python = ">=3.9"
 dependencies = [
-    "llm>=0.26"
+    "llm>=0.26",
 ]
 
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[tool.uv]
+dev-dependencies = [
+    "black",
+    "isort",
+]
 
 [project.urls]
 Homepage = "https://github.com/tombedor/llm-tools-memory"
